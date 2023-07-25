@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        .row {
+          margin: 20px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .col {
+          width: 33.33%;
+          padding: 10px;
+          box-sizing: border-box;
+          float: right;
+         
+        }
+
+        .section {
+          position: relative;
+          background-color: #8b8484ea;
+          border: 1px solid black;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+
+        .section-title {
+          color: white;
+          padding: 5px;
+          font-size: 125%;
+          text-align:end;
+        }
+
+        .section-title-chicken {
+          background-color: #FF00C8; /* Chicken - Rose */
+          width: fit-content;
+          
+        }
+
+        .section-title-beef {
+          background-color:red; /* Beef - Red */
+          width: fit-content;
+        }
+
+        .section-title-sushi {
+          background-color:rgb(240, 240, 34); /* Sushi - Yellow */
+          width: fit-content;
+        }
+
+        /* Mobile layout for iPhone portrait mode */
+        @media (max-width: 375px) { /* Adjust the max-width to target specific iPhone models or screen sizes */
+          .col {
+            width: 100%;
+          }
+
+          .section-title {
+            background-color: red; /* Red for all section titles on mobile */
+            margin-top: 10px;
+            text-align: center;
+          }
+
+          .section-title-chicken {
+            background-color: #FF00C8; /* Chicken - Rose */
+            width: fit-content;
+          }
+
+          .section-title-beef {
+            background-color: red; /* Beef - Red */
+            width: fit-content;
+          }
+
+          .section-title-sushi {
+            background-color:rgb(240, 240, 34); /* Sushi - Yellow */
+            width: fit-content;
+          }
+        }
+
+        /* Tablet and Desktop layout */
+        @media (min-width: 768px) {
+          .col {
+            width: 80.33%;
+          }
+        }
+
+        @media (min-width: 992px) {
+          .col {
+            width: 40.33%;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .col {
+            width: 33.33%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+
+    <div class="row">
+      <div class="col">
+        <div class="section">
+          <h2 class="section-title section-title-chicken">Chicken</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eros quis lectus tristique malesuada.
+            Nullam mattis erat ac tortor finibus, nec tempor odio pulvinar.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="section">
+          <h2 class="section-title section-title-beef">Beef</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eros quis lectus tristique malesuada.
+            Nullam mattis erat ac tortor finibus, nec tempor odio pulvinar.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="section">
+          <h2 class="section-title section-title-sushi">Sushi</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eros quis lectus tristique malesuada.
+            Nullam mattis erat ac tortor finibus, nec tempor odio pulvinar.</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
