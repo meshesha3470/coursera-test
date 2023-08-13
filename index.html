@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Solution</title>
+</head>
+<body>
+  <h1>Assignment Solution</h1>
+  <div id="greetings"></div>
+
+  <script> 
+    // Array of names
+    var names = ["yaakov","John", "Jane", "Jason", "Jill", "James","paul","frank","larry","paul" ];
+
+    // Get the "greetings" div
+    var greetingsDiv = document.getElementById("greetings");
+
+    // Loop over the names
+    for (var i = 0; i < names.length; i++) {
+      var name = names[i];
+      var firstLetter = name.charAt(0).toLowerCase();
+      
+      if (firstLetter === 'j') {
+        // Create a paragraph element for the Goodbye message
+        var goodbyeMessage = document.createElement("p");
+        goodbyeMessage.textContent = "Goodbye " + name;
+        greetingsDiv.appendChild(goodbyeMessage);
+      } else {
+        // Create a paragraph element for the Hello message
+        var helloMessage = document.createElement("p");
+        helloMessage.textContent = "Hello " + name;
+        greetingsDiv.appendChild(helloMessage);
+      }
+    }
+  </script>
+</body>
+</html>
